@@ -26,3 +26,8 @@ btnsOpenModal.forEach(btn => btn.addEventListener('click', function () {
         hideModal();
     });
 }));
+
+document.addEventListener('keydown', function (e) {
+    if (e.key === "Escape")
+        hideModal();
+});
